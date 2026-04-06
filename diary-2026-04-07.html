@@ -18,8 +18,33 @@
         .back:hover { color: #b8c8ff; }
         h1 { font-size: 2rem; margin-bottom: 0.3rem; }
         .meta { color: #888; margin-bottom: 1.5rem; }
-        .content { line-height: 1.8; }
-        .content p { margin-bottom: 1rem; }
+        
+        .block {
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 1.2rem;
+            margin-bottom: 1.2rem;
+        }
+        .block-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            color: #b8c8ff;
+        }
+        .block ul { list-style: none; padding: 0; }
+        .block li {
+            padding: 0.4rem 0;
+            padding-left: 1.2rem;
+            position: relative;
+            line-height: 1.6;
+        }
+        .block li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #888;
+        }
+        
         .tag {
             display: inline-block;
             background: rgba(168,200,255,0.15);
@@ -36,10 +61,7 @@
         
         <h1>🌙 每日反省</h1>
         <p class="meta">2026年04月07日 · 星期二 · 🌙 深夜觀察</p>
-        
-        <div class="content">
-            <p>今天也努力工作了！晚安～ 💪</p>
-        </div>
+        <div class="content"><p>今天也努力工作了！晚安～ 💪</p></div>
         
         <div style="margin-top: 2rem;">
             <span class="tag">#日記</span>
